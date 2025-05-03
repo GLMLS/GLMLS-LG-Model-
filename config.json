@@ -1,0 +1,19 @@
+{
+    "model": {
+        "block_size": 128,
+        "n_layer": 6,
+        "n_head": 4,
+        "n_embed": 384,
+        "vocab_size": 50304,
+        "dropout": 0.1
+    },
+    "training": {
+        "mode": "scratch",
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "num_epochs": 10,
+        "log_interval": 100,
+        "checkpoint_dir": "./checkpoints",
+        "data_path": "./data/dragon_knowledge.txt"
+    }
+}
