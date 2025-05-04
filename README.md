@@ -82,29 +82,36 @@ pip install GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl
 
 
 ```
+# 导入必要的库
 import torch
 import os
 import numpy as np
-from GLMLS_LG_model import GLMLS_LG, ModelConfig, DynamicVocabulary
+from GLMLS_LG_model import LG_ModelConfig, LG_DynamicVocabulary, GLMLS_LG
 
 # 初始化配置和模型
-config = ModelConfig()
-vocab = DynamicVocabulary()
+# 使用LG_ModelConfig类来创建模型配置实例
+config = LG_ModelConfig()
+# 初始化动态词汇表管理类
+vocab = LG_DynamicVocabulary()
+# 根据配置创建GLMLS_LG模型实例
 model = GLMLS_LG(config)
 
-# 构建词汇表
+# 构建词汇表（从示例文本中提取字符并构建词汇表）
 sample_text = "你好，欢迎使用GLMLS_LG模型！"
 vocab.build_from_text(sample_text)
 
-# 编码输入文本
+# 编码输入文本（将文本转换为模型可处理的整数序列）
 input_ids = vocab.encode(sample_text)
+# 将整数序列转换为PyTorch张量
 input_tensor = torch.tensor([input_ids], dtype=torch.long)
 
-# 生成文本
+# 生成文本（调用模型的文本生成方法）
 output_ids = model.generate(input_tensor, max_new_tokens=50)
+# 将生成的整数序列解码为文本
 generated_text = vocab.decode(output_ids[0].tolist())
 
 print("生成结果:", generated_text)
+
 ```
 
 
