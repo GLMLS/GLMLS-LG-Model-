@@ -80,6 +80,7 @@ pip install GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl
 
 # 使用示例
 
+注意: GLMLS-LG-龙光模型包含于GLMLS-LG-龙光模型python库当中可以导入调用。
 
 ```
 # 导入必要的库
