@@ -8,7 +8,8 @@ from typing import Dict
 from torch.utils.data import Dataset, DataLoader
 
 # 导入GLMLS_LG模型库
-from GLMLS_LG_model import GLMLS_LG, ModelConfig
+from GLMLS_LG_Model import GLMLS_LG, LG_ModelConfig as ModelConfig  # 正确导入配置类
+from GLMLS_LG_Model import LG_DynamicVocabulary as DynamicVocabulary  # 正确导入动态词汇表类
 
 # 加载配置文件
 def load_config(config_path: str) -> Dict:
