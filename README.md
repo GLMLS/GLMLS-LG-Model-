@@ -86,7 +86,7 @@ pip install GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl
 import torch
 import os
 import numpy as np
-from GLMLS_LG_model import LG_ModelConfig, LG_DynamicVocabulary, GLMLS_LG
+from GLMLS_LG_Model import LG_ModelConfig, LG_DynamicVocabulary, GLMLS_LG
 
 # 初始化配置和模型
 # 使用LG_ModelConfig类来创建模型配置实例
