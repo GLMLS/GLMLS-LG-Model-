@@ -2,7 +2,7 @@
 
 # 简介
 
-GLMLS-LG龙光（GLMLS Long Guang Large Language Model）是由金龙华光工作室的GoldenLoongAS开发的轻量级高效语言模型，专注于平衡性能与资源消耗，适合在各类硬件环境下运行。
+GLMLS-LG-龙光（GLMLS Long Guang Large Language Model）是由金龙华光工作室的GoldenLoongAS开发的轻量级高效语言模型，专注于平衡性能与资源消耗，适合在各类硬件环境下运行。
 
 
 # 特点
@@ -17,7 +17,7 @@ GLMLS-LG龙光（GLMLS Long Guang Large Language Model）是由金龙华光工�
 • 灵活生成：提供多种文本生成策略，包括Top-k、Top-p采样和束搜索
 
 
-# 安装指南
+# 安装GLMLS-LG-龙光模型python库指南
 
 
 通过PyPI安装
@@ -49,7 +49,7 @@ pip install GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl
 
 ```
 
-你也可以在本项目main分支中下载`GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl`后,使用
+你也可以在本项目main分支或Release中下载`GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl`后,使用
 ```bash
 # 安装GLMLS_LG模型轮子文件
 pip install GLMLS_LG_Model-0.0.1-cp311-cp311-linux_aarch64.whl
