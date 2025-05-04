@@ -2,7 +2,7 @@
 
 # 简介
 
-GLMLS-LG-龙光模型（GLMLS Long Guang Large Language Model）以及GLMLS-LG-龙光模型python库是由金龙华光工作室的GoldenLoongAS开发的轻量级高效语言模型，专注于平衡性能与资源消耗，适合在各类硬件环境下运行。
+GLMLS-LG-龙光模型（GLMLS Long Guang Large Language Model）以及GLMLS-LG-龙光模型python库是由金龙华光工作室的GoldenLoongAS开发的轻量级高效语言模型和模型python库，专注于平衡性能与资源消耗，适合在各类硬件环境下运行。
 
 
 # 特点
